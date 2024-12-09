@@ -82,9 +82,9 @@ def capture_and_recognize():
                     prediction = knn.predict([face_resized])[0]
 
                     if prediction == 1:
-                        print("Face match found!")
+                        print("Face match found : Hello Sam!")
                     else:
-                        print("No match found.")
+                        print("No match found : Hello, Stranger!")
 
                 break
 
@@ -96,15 +96,6 @@ def capture_and_recognize():
 
 # Main script
 if __name__ == "__main__":
-    print("Choose an option:")
-    print("1. Train Model")
-    print("2. Capture and Recognize")
-
-    choice = input("Enter your choice: ")
-
-    if choice == "1":
-        train_model()
-    elif choice == "2":
-        capture_and_recognize()
-    else:
-        print("Invalid choice.")
+    train_model()
+    capture_and_recognize()
+    
