@@ -42,10 +42,11 @@ The default classifier file (haarcascade_frontalface_default.xml) is required to
 python face_detector.py
 ```
 2. The webcam window will open.
-3. The system will attempt to detect faces in real-time.
-4. If faces are detected, bounding boxes will appear around them.
-5. Press 'q' to exit the program.
-6. Detect Faces in an Image
+3. The system will attempt to detect my face in real-time.
+4. If my face is detected, bounding boxes will appear around it.
+5. A message `Face match found : Hello Sam!` is returned.
+6. Else : `No match found : Hello, Stranger!`
+7. Press 'q' to exit the program.
 
 ### Code Structure
 ```bash
